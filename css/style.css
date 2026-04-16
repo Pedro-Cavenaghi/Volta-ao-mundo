@@ -5,13 +5,18 @@
     list-style: none;
 }
 
-body {
+ body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+    background: linear-gradient(to bottom, #001649, #000414) !important;
 }
 
 header {
-    
+    position: absolute;
+    width: 100%;
+}
+
+.hero {
     height: 100vh;
     width: 100%;
     background-image: url(../assets/img/home/torres-del-paine.jpg);
@@ -19,15 +24,23 @@ header {
     background-position: center center;
     display: flex;
     justify-content: center;
-    
+}
+
+.nao-clicavel {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.nao-scroll {
+    overflow: hidden;
+    height: 100vh;
 }
 
 .navbar {
-    position: absolute;
+    
     padding: 20px 50px;
     display: flex;
     align-items: center;
-    width: 100%;
     box-sizing: border-box;
 }
 
@@ -93,8 +106,21 @@ header {
     position: absolute;
     top: 20px;
     right: 40px;
-    height: 35px;
+    height: 40px;
     width: auto;
+}
+    /* secao sobre*/
+.carousel-indicators [data-bs-target] {
+    background-color: #ed3c57;
+}
+
+.carousel-item {
+    min-height: 500px;
+}
+
+.img-caroussel {
+    
+    clip-path: circle(34%);
 }
 
 @media screen and (max-width: 995px) {

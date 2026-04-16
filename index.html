@@ -7,6 +7,8 @@
     <link rel="icon" href="assets/icons/chile-round-flag.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header>
@@ -26,41 +28,120 @@
         <img src="assets/icons/menu-aberto.png" alt="Menu hamburguer" class="menu-hamburguer">
     </nav>
 </header>
+
+<section class="hero"></section>
+
 <!-- secao sobre chile -->
-<section class="secao_sobre">
-    <div class="container">
+<section class="container my-5 secao-sobre">
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+
+    <div class="carousel-indicators">
+  <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+  <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+
+</div>
+    <div class="carousel-inner">
+
+      <!-- slide 1 -->
+      <div class="carousel-item active">
         <div class="row align-items-center">
-            <div class="col-xl-5 col-lg-6 col-sm-8">
-                <h2>"CHILE É LEGALL!!!!!"</h2>
-                <div class="detalhes-sobre">
-                    <p class="fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam suscipit, risus ac volutpat hendrerit, tortor tortor lobortis nisi, 
-                        eget pharetra enim nisi ac sem.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam suscipit, risus ac volutpat hendrerit, tortor tortor lobortis nisi, 
-                        eget pharetra enim nisi ac sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam suscipit, risus ac volutpat hendrerit, tortor tortor lobortis nisi, 
-                        eget pharetra enim nisi ac sem.</p>
-                        <p>Risus ac volutpat hendrerit, tortor tortor lobortis nisi, 
-                        eget pharetra enim nisi ac sem.</p>
+
+          <div class="col-md-6 text-light">
+            <h2 class="fw-bold">Turismo no Chile</h2>
+            <p class="fw-bold">The readable content off a page when looking layout using <br>
+                Lorem Ipsum is that it has.</p>
+            <p>It is a long established fact that a reader will be distracted if the readable <br>
+                content off a page when looking at its layout using Lorem Ipsum is that it has. <br>
+                It is a long established fact that a reader will be distracted the readable content <br>
+                off a page when looking at its layout using Lorem Ipsum is that it has.
+            </p>
+            <a href="pages/turismo.html" class="btn btn-danger">Saiba mais</a>
+          </div>
+
+          <div class="col-md-6">
+            <img src="assets/img/home/torres-del-paine.jpg" class="img-fluid img-caroussel">
+          </div>
+        </div>
+      </div>
+
+      <!-- slide 2 -->
+      <div class="carousel-item">
+        <div class="row align-items-center">
+
+          <div class="col-md-6 text-light">
+            <h2 class="fw-bold">Cultura Chilena</h2>
+            <p class="fw-bold">The readable content off a page when looking layout using <br>
+                Lorem Ipsum is that it has.</p>
+                <p>It is a long established fact that a reader will be distracted if the readable <br>
+                content off a page when looking at its layout using Lorem Ipsum is that it has. <br>
+                It is a long established fact that a reader will be distracted the readable content <br>
+                off a page when looking at its layout using Lorem Ipsum is that it has. <br>
+                
+                </p>
+
+            <a href="pages/cultura.html" class="btn btn-danger">Saiba mais</a>
+          </div>
+
+          <div class="col-md-6">
+            <img src="assets/img/home/torres-del-paine.jpg" class="img-fluid img-caroussel">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container px-4">
+            <div class="row">
+                <div class="col-6 col-lg-4 pt-3">
+                    <h4 class="fw-bold">Explorando o Chile</h4>
+                    <p class="mb-0">Descubra as paisagens, cultura e gastronomia do Chile.</p>
+                    <p>Este site apresenta informações essenciais para quem deseja conhecer o país.</p>
+                </div>
+                <div class="col pt-3">
+                    <h4 class="fw-bold">Menu</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-light">Home</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Turismo</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Cultura</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Gastronomia</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">História & Geo</a></li>
+                    </ul>
+                </div>
+                <div class="col pt-3">
+                    <h4 class="fw-bold">Mais</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="text-decoration-none text-light nao-clicavel">Sobre o projeto</a></li>
+                        <li><a href="pages/creditos.html" class="text-decoration-none text-light">Créditos</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 pt-3 text-lg-end">
+                    <h4 class="fw-bold">Redes sociais</h4>
+                    <div>
+                        <a href="#" class="text-decoration-none text-light"><i class="bi bi-instagram fs-3 me-2"></i></a>
+                        <a href="#" class="text-decoration-none text-light"><i class="bi bi-linkedin fs-3 me-2"></i></a>
+                        <a href="#" class="text-decoration-none text-light"><i class="bi bi-envelope-fill fs-3 me-2"></i></a>
+                        <a href="#" class="text-decoration-none text-light"><i class="bi bi-github fs-3 me-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <p>© 2026&nbsp; Projeto acadêmico&nbsp; - &nbsp;Desenvolvido por Pedro Cavenaghi</p>
+                <div class="d-flex">
+                    <a class="text-decoration-none text-light me-4 nao-clicavel">Termos de uso</a>
+                    <a class="text-decoration-none text-light nao-clicavel">Política de privacidade</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-    <a href="https://www.flaticon.com/br/icones-gratis/chile" title="chile ícones">Chile ícones criados por Ruslan Babkin - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/chile" title="chile ícones">Chile ícones criados por Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/menu-aberto" title="menu aberto ícones">Menu aberto ícones criados por Ilham Fitrotul Hayat - Flaticon</a>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-    <script>
-        const menuHamburguer = document.querySelector(".menu-hamburguer")
-        const navLinks = document.querySelector(".nav-links")
-
-        menuHamburguer.addEventListener('click',()=>(navLinks.classList.toggle('mobile-menu')))
-        
-    </script>
+    <script src="js/jsmain.js"></script>
 </body>
 </html>
