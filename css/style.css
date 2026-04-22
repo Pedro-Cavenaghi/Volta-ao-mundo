@@ -15,7 +15,7 @@ html {
     min-height: 100vh;
     height: 100%;
     overflow-x: hidden;
-    background-color: #001a33;
+    background-color: #121826;
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
@@ -278,7 +278,6 @@ main {
     border-radius: 12px;
 }
 
-/* imagem */
 .inner img {
     width: 100%;
     height: 100%;
@@ -286,7 +285,6 @@ main {
     transition: 0.4s;
 }
 
-/* overlay escuro */
 .inner::after {
     pointer-events: none;
     content: "";
@@ -297,7 +295,6 @@ main {
     transition: 0.3s;
 }
 
-/* título */
 .titulo {
     position: absolute;
     bottom: 10px;
@@ -310,7 +307,6 @@ main {
     transition: 0.3s;
 }
 
-/* hover */
 .box:hover img {
     transform: scale(1.08);
     filter: brightness(0.7);
@@ -325,105 +321,49 @@ main {
     transform: translateY(0);
 }
 
-.hero-turismo {
+/* hero */
+
+.hero {
     height: 80vh;
-    background: url('../assets/img/home/pedras-chile.jpg') center/cover no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 
-/* overlay escuro */
-.hero-turismo::after {
+.hero::after {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.6);
 }
 
-/* garante que o conteúdo fique acima */
-.hero-turismo .container {
-    position: relative;
-    z-index: 2;
-}
-
-.hero-historia {
-    height: 80vh;
-    background: url('../assets/img/home/carrossel-historia.png') center/cover no-repeat;
-    position: relative;
-}
-
-/* overlay escuro */
-.hero-historia::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-/* garante que o conteúdo fique acima */
-.hero-historia .container {
-    position: relative;
-    z-index: 2;
-}
-
-.hero-gastronomia {
-    height: 80vh;
-    background: url('../assets/img/home/chile-gastronomia-hero2.webp') center/cover no-repeat;
-    position: relative;
-}
-
-/* overlay escuro */
-.hero-gastronomia::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-/* garante que o conteúdo fique acima */
-.hero-gastronomia .container {
-    position: relative;
-    z-index: 2;
-}
-
-.hero-cultura {
-    height: 80vh;
-    background: url('../assets/img/home/chile-cultura.jpg') center/cover no-repeat;
-    position: relative;
-}
-
-/* overlay escuro */
-.hero-cultura::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-/* garante que o conteúdo fique acima */
-.hero-cultura .container {
+.hero .container {
     position: relative;
     z-index: 2;
 }
 
 .hero-home {
-    height: 80vh;
-    background: url('../assets/img/home/torres-del-paine.jpg') center/cover no-repeat;
-    position: relative;
+    background-image: url('../assets/img/home/hero-principal.png');
 }
 
-/* overlay escuro */
-.hero-home::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
+.hero-turismo {
+    background-image: url('../assets/img/turismo/hero-moais.jpg');
 }
 
-/* garante que o conteúdo fique acima */
-.hero-home .container {
-    position: relative;
-    z-index: 2;
+.hero-historia {
+    background-image: url('../assets/img/historia/hero-historia-geo.png');
 }
+
+.hero-gastronomia {
+    background-image: url('../assets/img/gastronomia/hero-gastronomia-gerado.png');
+}
+
+.hero-cultura {
+    background-image: url('../assets/img/cultura/hero-cultura.png');
+}
+
+/* tabs gastronomia */
 
 .nav-pills .nav-link {
     color: white;
