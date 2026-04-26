@@ -77,12 +77,12 @@ Esses pontos contribuíram para um melhor entendimento sobre estrutura de projet
 
 ### Cultura
 <p align="center">
-  <img src="preview-cultura.png" width="800">
+  <img src="assets/img/preview/preview-cultura.png" width="800">
 </p>
 
 ### Gastronomia
 <p align="center">
-  <img src="preview-gastronomia.png" width="800">
+  <img src="assets/img/preview/preview-gastronomia.png" width="800">
 </p>
 
 ---
